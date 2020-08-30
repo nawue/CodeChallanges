@@ -3,7 +3,6 @@ def Solve(B, A):
     s = 0
     A.sort()
     for i in A:
-        print(A)
         s += i
         if s > B:
             return res
