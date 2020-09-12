@@ -1,19 +1,7 @@
-def Solve2(H1,D,day):
-    H1.pop(0)
-    if H1 == []:
-        return True
-    
-    for i in range(day,D+1):         
-        if i%H1[0] == 0:
-            return Solve2(H1[:],D,i)
-            
-    return False
-
-
 def Solve(H, D):
-    for day in range(D, 0, -1):     
-        if (day%H[0] == 0) and Solve2(H[:],D,day):                    
-            return day
+    for h in H[::-1]:     
+        D = (D // h) * h #Smallest multiple of Hi greater than or equal to D
+    return D
 
 def main():
     cases = int(input())
