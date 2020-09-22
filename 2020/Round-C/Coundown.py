@@ -13,7 +13,7 @@ def Solve(N,A,K):
         else:
             auxK = K
 
-        print("auxK = {}; A[i] = {}; res = {}".format(auxK, A[i], res))
+        #print("auxK = {}; A[i] = {}; res = {}".format(auxK, A[i], res))
 
     return res
 
