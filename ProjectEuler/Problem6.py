@@ -8,3 +8,4 @@ for i in range(1,11):
     aux2 += pow(i,2)
 
 print(aux2 - pow(aux,2))
+
